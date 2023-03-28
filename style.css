@@ -1,0 +1,199 @@
+@font-face {
+    font-family: Cirrus;
+    src: url('data/pixeloid.ttf');
+    }
+      
+    
+    html, body {
+        margin: 0;
+        padding: 0;
+        cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:16px;'><text y='50%'>🌻</text></svg>") 16 0,auto; /*!emojicursor.app*/
+    }
+
+    
+    
+    .wrapper{
+        margin: 0; 
+        padding: 0;
+        margin-left: 18%;
+    
+        display: flex;
+        overflow-x: auto;
+    
+    }
+    
+    .info{
+        position: absolute;
+        width:18%;
+       
+        box-sizing: border-box;
+        padding-left: 0.75vw;
+        padding-right: 0.75vw;
+       
+        font-size:0.75vw;
+    
+    }
+    
+    .section{
+    
+        height: 100vh; 
+        overflow-y: auto;
+        flex: 1;
+    
+        transition: 0.3s;
+        transition-timing-function: ease-in-out;
+         
+        padding-left: 1.0vw;
+        padding-right: 1.0vw;
+        font-size: 0.75vw;
+    
+       scrollbar-width: none;
+    
+    }
+    
+    p {
+        font-family: 'IBM Plex Mono', monospace;
+    }
+    
+    h1{
+        /* font-size: 1.5vw; */
+        font-family: Cirrus;
+        text-align: center;
+        color:goldenrod;
+        font-size: 1.0vw;
+    }
+    
+    .info h1 {
+        font-family: Cirrus;
+        text-align: center;
+        color: hotpink;
+        font-size: 1.0vw;
+    }
+    
+    
+    .section:hover{  
+        flex: 4;
+        font-size: 1.5vw;
+        padding-left: 0.75vw;
+        padding-right: 0.75vw;
+    
+    }
+    
+    a {
+        font-family: 
+        'IBM Plex Mono', monospace;
+        color: hotpink;
+        font-style: italic;
+    }
+    
+    img {
+        width: 100%;
+        min-height: auto;
+        /* max-width: 100%; */
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    video {
+        width: 100%;
+        min-height: auto;
+        /* max-width: 100%; */
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    figure {
+        max-width: 64rem;
+        width: 100%;
+        max-height: 30.875rem;
+        height: 100%;
+        margin: 1.25rem auto;
+        padding: 1.051%;
+        background-color: #666;
+      }
+    
+    .section::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .wrapper::-webkit-scrollbar {
+        height: 1.5vh;
+        background: rgb(240, 240, 240);
+        border-top: 1px solid rgb(175, 175, 175);
+    }
+    
+    .wrapper::-webkit-scrollbar-thumb {
+        border-radius: 20px;
+        background: rgb(175, 175, 175);   
+    }
+    
+    @media (max-width: 60em){
+        .info {
+            box-sizing: border-box;
+            padding-left: 5vw;
+            padding-right: 5vw;
+            width:100%;
+            position:relative;
+        }
+    
+        .wrapper {
+            margin-left: 0;
+            flex-direction: column;
+            height: 150em;
+            /* height: 360vh; */
+    
+            
+        }
+    
+        .section {
+            padding-left: 5vw;
+            display: inline-flex;   /* makes the slides go left to right*/ 
+            overflow-y:hidden;
+            padding-top: 6vw;
+            padding-bottom: 2vw;
+            
+        }
+    
+        img { 
+            width:auto;
+            height: 100%;
+            padding-left: 2vw;
+            padding-right: 2vw;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    
+        .section:hover{  
+            flex: 1;
+            padding-left: 6vw;
+            padding-right: 0.75vw;
+            font-size: 0.75vw;
+        }
+    
+        h1{        
+            font-size: 28pt;
+            padding-right: 10vw;
+            text-align: left;
+        }
+    
+        p{
+            font-size: 10pt;
+            text-align: left;    
+            -webkit-text-size-adjust: 100%;
+    
+    
+        }
+    
+        .section p{
+            padding-top: 18pt;
+            padding-right: 5vw;
+            min-width: 95%;
+           
+        }
+    
+       
+    
+    
+    }
+    
+    
