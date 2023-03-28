@@ -64,7 +64,13 @@
         font-size: 1.0vw;
     }
     
-    
+    .info img {
+        width: 80%;
+        min-height: auto;
+        /* max-width: 100%; */
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
     .section:hover{  
         flex: 4;
         font-size: 1.5vw;
@@ -103,7 +109,7 @@
         height: 100%;
         margin: 1.25rem auto;
         padding: 1.051%;
-        background-color: #666;
+        background-color: #fefefe;
       }
     
     .section::-webkit-scrollbar {
