@@ -54,18 +54,18 @@
         font-family: 'IBM Plex Mono', monospace;
         text-align: center;
         color:goldenrod;
-        font-size: 1.0vw;
+        font-size: 17px;
     }
     
     .info h1 {
         font-family: 'IBM Plex Mono', monospace;
         text-align: center;
         color: hotpink;
-        font-size: 1.0vw;
+        font-size: 17px;
     }
     
     .info img {
-        width: 80%;
+        width: 75%;
         min-height: auto;
         /* max-width: 100%; */
         padding-top: 10px;
@@ -90,16 +90,16 @@
         width: 100%;
         min-height: auto;
         /* max-width: 100%; */
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 1px;
+        padding-bottom: 1px;
     }
 
     video {
         width: 100%;
         min-height: auto;
         /* max-width: 100%; */
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 1px;
+        padding-bottom: 1px;
     }
 
     figure {
