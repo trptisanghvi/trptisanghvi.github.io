@@ -15,23 +15,6 @@
         overflow-x: auto;
     
     }
-    .button {
-        background-color: hotpink; 
-        border: none;
-        font-family: 'IBM Plex Mono', monospace;
-        color: white;
-        display: inline-block;
-        text-align: center;
-        font-size: 0.75vw;
-        padding: 0.75vw;
-        transition-duration: 0.2s;
-        width:auto;
-      }
-      
-      .button:hover {
-        background-color:  goldenrod; 
-        color: goldenrod;
-      }
     
     .info{
         position: absolute;
@@ -43,7 +26,24 @@
        
         font-size:0.75vw;
     }
-   
+        .button {
+            background-color: hotpink; 
+            border: none;
+            font-family: 'IBM Plex Mono', monospace;
+            color: white;
+            display: inline-block;
+            text-align: center;
+            font-size: 0.75vw;
+            padding: 0.75vw;
+            transition-duration: 0.2s;
+            width:auto;
+        }
+        
+        .button:hover {
+            background-color:  goldenrod; 
+            color: goldenrod;
+        }
+    
     .section{
     
         height: 100vh; 
@@ -92,7 +92,6 @@
         font-size: 1.5vw;
         padding-left: 0.75vw;
         padding-right: 0.75vw;
-    
     }
     
     a {
@@ -143,7 +142,7 @@
         background: rgb(175, 175, 175);   
     }
     
-    @media (max-width: 60em){
+    @media (max-width: 75em){
         .info {
             box-sizing: border-box;
             padding-left: 5vw;
@@ -214,46 +213,3 @@
 /*******************
 MOBILE 
 ********************/
-
-
-/* On screens that are 768px wide or less, go from four columns to two columns */
-
-/* @media screen and (max-width: 768px) {
-    body {
-        font-size: 12px;
-        line-height: 18px;
-        letter-spacing: 0.02em;
-    }
-
-    .nav {
-        position: inherit;
-        z-index: 9;
-        text-align: left;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .nav-link {
-        margin: 3px 0px 18px 0px;
-        text-align: center;
-    }
-
-    main.reader {
-        width: 75%;
-    }
-
-    .entry-index {
-        display: block;
-        margin: 18px 0px 18px 0px;
-        position: relative;
-    }
-
-    .index-title {
-        display: block;
-        position: relative;
-        left: 0;
-        margin-top: 18px;
-    }
-} */
-    
-    
