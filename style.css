@@ -15,6 +15,23 @@
         overflow-x: auto;
     
     }
+    .button {
+        background-color: hotpink; 
+        border: none;
+        font-family: 'IBM Plex Mono', monospace;
+        color: white;
+        display: inline-block;
+        text-align: center;
+        font-size: 0.75vw;
+        padding: 0.75vw;
+        transition-duration: 0.2s;
+        width:auto;
+      }
+      
+      .button:hover {
+        background-color:  goldenrod; 
+        color: goldenrod;
+      }
     
     .info{
         position: absolute;
@@ -25,9 +42,8 @@
         padding-right: 0.75vw;
        
         font-size:0.75vw;
-    
     }
-    
+   
     .section{
     
         height: 100vh; 
