@@ -31,7 +31,7 @@
         Currently, I work as a Product Analyst at <a href = "https://headway.co/"> Headway</a>. </p>
         <img preload="auto" src="images/TrptiWithSunshine.gif" alt="">
     <p>
-    <a href="https://lightlytread.substack.com/" target="_blank"> 💭 Long form writing</a> | <a href="https://www.are.na/trpti-sanghvi" target="blank"> 🎨 Are.na</a><br>
+    <a href="https://lightlytread.substack.com/" target="_blank"> 💭 Newsletter</a> | <a href="https://www.are.na/trpti-sanghvi" target="blank"> 🎨 Are.na</a><br>
     <!-- <a href="https://www.fxhash.xyz/u/trp_chai" target="_blank"> 👩🏻‍🎨 Generative Art on fxhash</a><br> -->
     <!-- <a href="https://foundation.app/@trp_chai" target="_blank"> 🎨 Creative coding on foundation</a><br> -->
     <a href="https://docs.google.com/document/d/13YuKODXZf6XT9cbj8nggbRBMOadlEhEuQdcEdYNVBZM/edit#heading=h.txq71heajeso"> 👩🏻‍🎨 Art CV</a> | <a href="mailto: trptisanghvi1@gmail.com"> 💌 Contact</a><br>
@@ -44,11 +44,23 @@
     
    <p> Currently on loop: Prickly Pear by Portico Quartet </p> <br>
     <audio id="player" src="Prickly Pear.mp3"></audio>
-        <!-- sorry i know i used javascript :) -->
-  <div class = "button" onclick= "document.getElementById('player').play()"> Play </div>
-  <div class = "button" onclick="document.getElementById('player').pause()">Pause </div>
+  <div class = "button" onclick= "Play()"> ▶ </div>
   <div class = "button" onclick="document.getElementById('player').volume += 0.1">Vol +</div>
   <div class = "button" onclick="document.getElementById('player').volume -= 0.1">Vol - </div>
+          <!-- sorry i know i used javascript :) -->
+  <script type="text/javascript">
+    function Play()
+    {
+      var myAudio = document.getElementById("player");
+      if(myAudio.paused) {
+          myAudio.play();
+      }
+      else {
+         myAudio.pause();
+      }
+    }
+  </script>
+
   <hr>
 </div>
 
