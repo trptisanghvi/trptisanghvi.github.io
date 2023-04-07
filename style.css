@@ -158,7 +158,27 @@
             width:100%;
             position:relative;
         }
-    
+            .button {
+                background-color: hotpink; 
+                border: none;
+                font-family: 'IBM Plex Mono', monospace;
+                color: white;
+                display: inline-block;
+                text-align: center;
+                font-size: 10px;
+                padding: 10px;
+                transition-duration: 0.2s;
+                width: 25%;
+                padding-left: 3vw;
+                padding-right: 3.8vw;
+                /* height: 2%; */
+            }
+            
+            .button:hover {
+                background-color:  goldenrod; 
+                color: white;
+            }
+        
         .wrapper {
             margin-left: 0;
             flex-direction: column;
@@ -172,7 +192,6 @@
             overflow-y:hidden;
             padding-top: 6vw;
             /* padding-bottom: 2vw; */
-            
         }
     
         .section:hover{  
