@@ -65,6 +65,13 @@
     p {
         font-family: 'IBM Plex Mono', monospace;
     }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
     
     h1{
         /* font-size: 1.5vw; */
@@ -84,7 +91,7 @@
     .info img {
         width: 75%;
         min-height: auto;
-        /* max-width: 100%; */
+        max-width: 100%;
         padding-top: 10px;
         padding-bottom: 10px;
     }
@@ -106,8 +113,8 @@
         width: 100%;
         min-height: auto;
         /* max-width: 100%; */
-        padding-top: 1px;
-        padding-bottom: 1px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     video {
@@ -142,8 +149,8 @@
         border-radius: 20px;
         background: rgb(175, 175, 175);   
     }
-    
-    @media (max-width: 75em){
+    /* ADDING TO FLIP VIEWS FOR ANY SCREENS THAT ARE SMALLER THAN 750 PIXELS */
+    @media (max-width: 75em){  
         .info {
             box-sizing: border-box;
             padding-left: 5vw;
@@ -155,21 +162,26 @@
         .wrapper {
             margin-left: 0;
             flex-direction: column;
-            height: 150em;
+            height: 80em;
             /* height: 360vh; */
-    
-            
         }
-    
+
         .section {
-            padding-left: 5vw;
+            padding-left: 3vw;
             display: inline-flex;   /* makes the slides go left to right*/ 
             overflow-y:hidden;
             padding-top: 6vw;
-            padding-bottom: 2vw;
+            /* padding-bottom: 2vw; */
             
         }
     
+        .section:hover{  
+            flex: 1;
+            padding-left: 3vw;
+            padding-right: 10vw;
+            font-size: 0.3vw;
+        }
+
         img { 
             width:auto;
             height: 100%;
@@ -177,40 +189,42 @@
             padding-right: 2vw;
             padding-top: 0;
             padding-bottom: 0;
+            -webkit-text-size-adjust: 100%;
         }
-    
-        .section:hover{  
-            flex: 1;
-            padding-left: 6vw;
-            padding-right: 0.75vw;
-            font-size: 0.75vw;
+
+        video {
+            width:auto;
+            height: 100%;
+            padding-left: 2vw;
+            padding-right: 2vw;
+            padding-top: 0;
+            -webkit-text-size-adjust: 100%;
         }
     
         h1{        
-            font-size: 28pt;
+            font-size: 25px;
+            padding-left: 3vw;
             padding-right: 10vw;
             text-align: left;
+            -webkit-text-size-adjust: 100%;
         }
     
         p{
+            padding-top: 5pt;
+            padding-right: 1vw;
+            padding-left: 1vw;
+            min-width: 80%;
+            max-height: 100%;
             font-size: 10pt;
             text-align: left;    
             -webkit-text-size-adjust: 100%;
-    
-    
         }
     
         .section p{
-            padding-top: 18pt;
-            padding-right: 5vw;
-            min-width: 95%;
-           
+            padding-top: 5pt;
+            padding-right: 1vw;
+            padding-left: 1vw;
+            min-width: 80%;
+            max-height: 100%;
         }
-    
-       
-    
-    
     }
-/*******************
-MOBILE 
-********************/
