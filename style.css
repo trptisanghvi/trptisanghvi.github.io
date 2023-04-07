@@ -51,7 +51,7 @@
         overflow-y: auto;
         flex: 1;
     
-        transition: 0.3s;
+        transition: 0.4s;
         transition-timing-function: ease-in-out;
          
         padding-left: 1.0vw;
@@ -221,7 +221,7 @@
         }
     
         .section p{
-            padding-top: 5pt;
+            /* padding-top: 5pt; */
             padding-right: 1vw;
             padding-left: 1vw;
             min-width: 80%;
