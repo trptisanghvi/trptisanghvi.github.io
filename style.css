@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Louise;
+    src: url('Louise.otf');
+    }
+    
     html, body {
         margin: 0;
         padding: 0;
@@ -29,7 +34,9 @@
         .button {
             background-color: hotpink; 
             border: none;
-            font-family: 'IBM Plex Mono', monospace;
+            font-family: 
+            /* 'Louise'; */
+            'IBM Plex Mono', monospace;
             color: white;
             display: inline-block;
             text-align: center;
@@ -76,14 +83,17 @@
     
     h1{
         /* font-size: 1.5vw; */
-        font-family: 'IBM Plex Mono', monospace;
+        font-family:  
+        'IBM Plex Mono', monospace;
+        /* 'Louise'; */
         text-align: center;
         color:goldenrod;
         font-size: 17px;
     }
     
     .info h1 {
-        font-family: 'IBM Plex Mono', monospace;
+        font-family: 'Louise';
+        /* 'IBM Plex Mono', monospace; */
         text-align: center;
         color: hotpink;
         font-size: 17px;
