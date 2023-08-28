@@ -2,7 +2,7 @@
 var cnv;
 
 function setup() {
-  cnv = createCanvas(200, 50);
+  cnv = createCanvas(600, 50);
   cnv.parent('about-me');
 }
 
@@ -28,9 +28,7 @@ function draw() {
       circle(x2, y2, pr);
         
     }
-      // displayEye(height/2+105,width/7, 25) 
-      displayEye(140,28.5, 25) 
-      displayEye(90,28.5, 25); 
-      // displayEye(height/2+70,width/7, 25); 
+      displayEye(height/2+105,width/20, 25);
+      displayEye(height/2+70,width/20, 25); 
 
   }
