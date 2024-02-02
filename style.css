@@ -168,19 +168,19 @@
       }
     
     .section::-webkit-scrollbar {
-        /* display: none; */
+        display: none;
     }
     
     .wrapper::-webkit-scrollbar {
-        /* height: 1.5vh;
+        height: 1.5vh;
         background: rgb(240, 240, 240);
-        border-top: 1px solid rgb(175, 175, 175); */
+        border-top: 1px solid rgb(175, 175, 175);
     }
     
-    /* .wrapper::-webkit-scrollbar-thumb { */
-        /* border-radius: 20px;
-        background: rgb(175, 175, 175);    */
-    /* } */
+    .wrapper::-webkit-scrollbar-thumb {
+        border-radius: 20px;
+        background: rgb(175, 175, 175);   
+    }
     /* ADDING TO FLIP VIEWS FOR ANY SCREENS THAT ARE SMALLER THAN 750 PIXELS */
     @media (max-width: 75em){  
         .info {
