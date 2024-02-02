@@ -91,6 +91,26 @@
         color:goldenrod;
         font-size: 17px;
     }
+
+    h2{
+        /* font-size: 1.5vw; */
+        font-family:  
+        'IBM Plex Mono', monospace;
+        /* 'Louise'; */
+        text-align: center;
+        color:goldenrod;
+        font-size: 15px;
+    }
+
+    h3{
+        /* font-size: 1.5vw; */
+        font-family:  
+        'IBM Plex Mono', monospace;
+        /* 'Louise'; */
+        text-align: center;
+        color:goldenrod;
+        font-size: 12px;
+    }
     
     .info h1 {
         font-family: 'Louise';
@@ -148,19 +168,19 @@
       }
     
     .section::-webkit-scrollbar {
-        display: none;
+        /* display: none; */
     }
     
     .wrapper::-webkit-scrollbar {
-        height: 1.5vh;
+        /* height: 1.5vh;
         background: rgb(240, 240, 240);
-        border-top: 1px solid rgb(175, 175, 175);
+        border-top: 1px solid rgb(175, 175, 175); */
     }
     
-    .wrapper::-webkit-scrollbar-thumb {
-        border-radius: 20px;
-        background: rgb(175, 175, 175);   
-    }
+    /* .wrapper::-webkit-scrollbar-thumb { */
+        /* border-radius: 20px;
+        background: rgb(175, 175, 175);    */
+    /* } */
     /* ADDING TO FLIP VIEWS FOR ANY SCREENS THAT ARE SMALLER THAN 750 PIXELS */
     @media (max-width: 75em){  
         .info {
@@ -216,8 +236,9 @@
         img { 
             width: auto;
             height: auto;
-            padding-left: 2vw;
-            padding-right: 2vw;
+            /* padding-left: 2vw;
+            padding-right: 2vw; */
+            align: center;
             padding-top: 0;
             padding-bottom: 0;
             -webkit-text-size-adjust: 100%;
@@ -226,14 +247,31 @@
         video {
             width: auto;
             height: auto;
-            padding-left: 2vw;
-            padding-right: 2vw;
+            align: center;
+            /* padding-left: 2vw;
+            padding-right: 2vw; */
             padding-top: 0;
             -webkit-text-size-adjust: 100%;
         }
     
         h1{        
             font-size: 17px; 
+            padding-left: 3vw;
+            padding-right: 10vw;
+            text-align: center;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        h2{        
+            font-size: 15px; 
+            padding-left: 3vw;
+            padding-right: 10vw;
+            text-align: center;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        h3{        
+            font-size: 12px; 
             padding-left: 3vw;
             padding-right: 10vw;
             text-align: center;
