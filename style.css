@@ -199,23 +199,23 @@
         }
 
         .section {
-            padding-left: 3vw;
-            display: inline-flex;   /* makes the slides go left to right*/ 
-            overflow-y:hidden;
-            padding-top: 6vw;
-            /* padding-bottom: 2vw; */
+            overflow-y: hidden;
+            overflow-x: hidden;
+            overflow: hidden;
+            display: table;
+            /* display: inline-flex;   makes the slides go left to right  */
         }
     
-        .section:hover{  
+        /* .section:hover{  
             flex: 1;
             padding-left: 3vw;
             padding-right: 10vw;
             font-size: 0.3vw;
-        }
+        } */
 
         img { 
-            width:auto;
-            height: 100%;
+            width: auto;
+            height: auto;
             padding-left: 2vw;
             padding-right: 2vw;
             padding-top: 0;
@@ -224,8 +224,8 @@
         }
 
         video {
-            width:auto;
-            height: 100%;
+            width: auto;
+            height: auto;
             padding-left: 2vw;
             padding-right: 2vw;
             padding-top: 0;
@@ -233,10 +233,10 @@
         }
     
         h1{        
-            font-size: 25px;
+            font-size: 17px; 
             padding-left: 3vw;
             padding-right: 10vw;
-            text-align: left;
+            text-align: center;
             -webkit-text-size-adjust: 100%;
         }
     
