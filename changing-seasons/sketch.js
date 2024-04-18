@@ -95,12 +95,12 @@ function showRandomSentences() {
     background('white')
     textAlign(CENTER,CENTER);
     textSize(19);
-    textWrap(WORD);
     textFont('Arial')
     fill(238,38,119); //#ee2677 remove this to have random font colors (lighter ones are harder to read)
     // Display the selected sentences
         for (let i = 0; i < sentences.length; i++) {   
-        text(selectedSentences[i], windowWidth/2, windowHeight/4 + i * 40)
+        textWrap(WORD);
+        text(selectedSentences[i], windowWidth/2, windowHeight/2.5 + i * 40)
         }
 } 
 
