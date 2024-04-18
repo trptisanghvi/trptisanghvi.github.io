@@ -93,14 +93,20 @@ let sentences = [
 function showRandomSentences() {
     let selectedSentences = pickDistinctRandomSentences(sentences, 3);
     background('white')
-    textAlign(CENTER,CENTER);
+    textAlign(CENTER,BASELINE);
     textSize(19);
     textFont('Arial')
     fill(238,38,119); //#ee2677 remove this to have random font colors (lighter ones are harder to read)
     // Display the selected sentences
         for (let i = 0; i < sentences.length; i++) {   
         textWrap(WORD);
-        text(selectedSentences[i], windowWidth/2, windowHeight/2.5 + i * 40)
+        if (windowWidth > 768) { 
+          text(selectedSentences[i], windowWidth/3.5, windowHeight/4 + i * 60,600,600) //browser  
+        } 
+        else {
+          text(selectedSentences[i], windowWidth/46, windowHeight/3 + i * 60,500,500) //mobile 
+         
+        }
         }
 } 
 
@@ -139,4 +145,9 @@ function keyTyped() {
       saveCanvas('ChangingSeasons', 'jpg');
     }
   }
+
+// resize window
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
 
