@@ -104,7 +104,7 @@ function showRandomSentences() {
           text(selectedSentences[i], windowWidth/3.5, windowHeight/4 + i * 60,600,600) //browser  
         } 
         else {
-          text(selectedSentences[i], windowWidth/46, windowHeight/3 + i * 60,500,500) //mobile 
+          text(selectedSentences[i], windowWidth/7, windowHeight/3 + i * 60,300,300) //mobile 
          
         }
         }
