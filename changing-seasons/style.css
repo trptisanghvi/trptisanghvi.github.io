@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    overflow: hidden;
+    background: #ffffff;
+    color: #ee2677
+  }
+  
+  body {
+    font-family: "Arial", sans-serif;
+    transition: background-color 1000ms;
+  }
+  
+  main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: translate(0, 0px);
+    }
+  
+    50% {
+      transform: translate(0, 15px);
+    }
+  
+    100% {
+      transform: translate(0, -0px);
+    }
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  
+  /* parent container, position is applied to this element */
+  .phrase {
+    color: #ee2677;
+    font-family: Arial;
+    position: absolute;
+    max-width: 100vw;
+    padding: 10px;
+    white-space: nowrap;
+
+    transition: all 3000ms;
+    position: absolute;
+    transform: translate(0, -50%);
+    
+  }
+  
+  /* center line when in focus */
+  .phrase.in-focus {
+    transform: translate(-50%, -50%);
+  }
+  
+  /* hidden element with full phrase, used for size and position */
+  .placeholder {
+    visibility: hidden;
+    position: relative;
+  }
+  
+  /* element with animated text */
+  .text {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  button {
+    display: block;
+    appearance: none;
+    overflow: hidden;
+    height: 60px;
+    line-height: 17px;
+    border-radius: 8px;
+    border: #e86252 3px solid;
+    font-size: 20px;
+    background-color: white;
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #eeebd0;
+  }
+  
+  
+  #initialButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #diary-button {
+    position: absolute;
+    color: black;
+    border: #e86252 3px solid;
+    font-size: 20px;
+    background-color: white;
+    top: 10%;
+    right: 0;
+    margin: 1em;
+    aspect-ratio: 1 /1;
+    z-index: 101; 
+  }
+  
+  #pen-button:hover {
+    background-color: #eeebd0;
+  }
+
+  #pen-button {
+    position: absolute;
+    color: black;
+    border: #e86252 3px solid;
+    font-size: 20px;
+    background-color: white;
+    top: 20%;
+    right: 0;
+    margin: 1em;
+    aspect-ratio: 1 /1;
+    z-index: 101; 
+  }
+  
+  #diary-button:hover {
+    background-color: #eeebd0;
+  }
+  
+  #about-button {
+    position: absolute;
+    color: black;
+    border: #e86252 3px solid;
+    font-size: 20px;
+    background-color: white;
+    top: 0;
+    right: 0;
+    margin: 1em;
+    aspect-ratio: 1 /1;
+    z-index: 101; 
+  }
+  
+  #about-button:hover {
+    background-color: #eeebd0;
+  }
+
+  
+  #about-text {
+    display: none;
+    padding: 2rem;
+    padding-right: 6rem;
+    position: absolute;
+    color: #ee2677;
+    background: rgba(255,255,255,0.95);
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+  }
+  
+  #about-text p {
+    line-height: 167%;
+    font-size: 1.25rem;
+    max-width: 800px;
+    color: #ee2677;
+  }
+  
+  @media screen and (max-width: 768px) {
+  
+    /* align buttons to bottom for small screens */
+    #initialButton {
+      top: calc(100% - 9rem);
+      transform: translate(-50%, 0);
+      white-space: nowrap;
+    }
+  
+    /* allow word wrap on mobile */
+    .phrase.in-focus {
+      width: 100%;
+      white-space: normal;
+      text-align: center;
+    }
+  
+    .text {
+      width: 100%;
+    }
+  }

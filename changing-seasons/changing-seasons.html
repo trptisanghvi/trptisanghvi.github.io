@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Changing Seasons</title>
+  <meta name="description" content="An interactive website creating poetry">
+  <meta name="author" content="Trpti Sanghvi">
+  <meta name="keywords" content="art, code, poetry, internet, trpti sanghvi">
+  <meta property="og:title" content="Changing Seasons" />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="style.css">
+  <link rel= "icon" type= "images/png" href="images/cherryblossom.png">
+  
+</head>
+
+<body>
+  <audio style="display:none" autoplay loop src = '/song/music.mp3'></audio>
+  <div class="top"></div>
+
+  <button type="button" id="initialButton">
+  Click to Create or Change
+    </button>
+  <button type="button" id="about-button">🌼?</button>
+  <button type="button" id="diary-button"> 
+      <a href = 'https://docs.google.com/document/d/1VuxzA9h6hOX2yn7J7Ly0wPjP3lY56Z-zPqzp-mJTYpo/edit?usp=sharing' target = '_blank'>📖</a>
+  </button>
+  <button type="button" id="pen-button"> 
+    <a href = 'https://lightlytread.substack.com/p/punctuality-and-spring' target = '_blank'>🖋️</a>
+  </button>
+  
+
+  <div id="about-text">
+    <p>
+        <i>Changing Seasons </i>is an interactive website. It composes 3-line poems by combining romantic poetry (Emily Dickinson, William Blake, William Wordsworth) and posts from public gardening community forums (Reddit, Craigslist etc). <br><br>
+
+        The goal of the website is to create a virtual poetry garden -- rich in metaphor, questions, and philosophy. Poets have used flowers as a metaphor for life. Specifically, the cycles of growth, stagnation, and death. <br>
+        This piece aims at introducing whimsy into the reading of these classic poems, by combining the questions that arise during the very act of nurturing and growing a plant within communities. 
+        <br> <br> 
+        Clicking on the central button refreshes the entire website, a nod to seasons and ephemerality. Click S to save, only if you must.
+    </p>
+  </div>
+
+  <main></main>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/p5.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"> </script>
+  <script> 
+    console.log('want to leave a secret note? ;)');
+    console.log('https://docs.google.com/document/d/1VuxzA9h6hOX2yn7J7Ly0wPjP3lY56Z-zPqzp-mJTYpo/edit?usp=sharing'); </script>
+
+  <script src="sketch.js"></script>
+</body>
+
+</html>
