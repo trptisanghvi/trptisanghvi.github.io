@@ -35,7 +35,7 @@
             border: none;
             font-family: 
             /* 'Louise'; */
-            'IBM Plex Mono', monospace;
+            ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
             color: white;
             display: inline-block;
             text-align: center;
@@ -69,7 +69,7 @@
     }
     
     p {
-        font-family: 'IBM Plex Mono', monospace;
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
     }
 
 
@@ -83,7 +83,7 @@
     h1{
         /* font-size: 1.5vw; */
         font-family:  
-        'IBM Plex Mono', monospace;
+        ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
         /* 'Louise'; */
         text-align: center;
         color:goldenrod;
@@ -93,7 +93,7 @@
     h2{
         /* font-size: 1.5vw; */
         font-family:  
-        'IBM Plex Mono', monospace;
+        ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
         /* 'Louise'; */
         text-align: center;
         color:goldenrod;
@@ -103,7 +103,7 @@
     h3{
         /* font-size: 1.5vw; */
         font-family:  
-        'IBM Plex Mono', monospace;
+        ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
         /* 'Louise'; */
         text-align: center;
         color:goldenrod;
@@ -112,7 +112,7 @@
     
     .info h1 {
         font-family: 'Louise';
-        /* 'IBM Plex Mono', monospace; */
+        /* IBM Plex Mono was here; using system monospace stack elsewhere */
         text-align: center;
         color: hotpink;
         font-size: 17px;
@@ -134,7 +134,7 @@
     
     a {
         font-family: 
-        'IBM Plex Mono', monospace;
+        ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
         color: hotpink;
         font-style: italic;
     }
@@ -191,7 +191,7 @@
             .button {
                 background-color: hotpink; 
                 border: none;
-                font-family: 'IBM Plex Mono', monospace;
+                font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
                 color: white;
                 display: inline-block;
                 text-align: center;
