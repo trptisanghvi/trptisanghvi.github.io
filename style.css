@@ -31,25 +31,52 @@
     }
 
         .button {
-            background-color: hotpink; 
-            border: none;
-            font-family: 
-            /* 'Louise'; */
-            ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
-            color: white;
-            display: inline-block;
+            background-color: rgba(255, 105, 180, 0.12);
+            border: 1px solid rgba(255, 105, 180, 0.45);
+            border-radius: 999px;
+            font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+            color: hotpink;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
-            font-size: 7px;
-            padding: 7px;
-            transition-duration: 0.2s;
-            width: 25%;
-            /* height: 2%; */
+            font-size: 12px;
+            letter-spacing: 0.01em;
+            line-height: 1;
+            padding: 4px 9px;
+            min-height: 24px;
+            width: auto;
+            cursor: pointer;
+            box-shadow: none;
+            transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
+            -webkit-appearance: none;
+            appearance: none;
         }
         
         .button:hover {
-            background-color:  goldenrod; 
-            color: white;
+            background-color: rgba(255, 105, 180, 0.2);
+            color: hotpink;
+            transform: translateY(-1px);
+            box-shadow: none;
         }
+
+        .button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .button--play {
+            font-weight: 500;
+            min-width: 32px;
+        }
+
+    .music-note {
+        color: hotpink;
+        font-size: 0.82em;
+        margin-left: 0.2em;
+        margin-right: 0.2em;
+        vertical-align: middle;
+    }
     
     .section{
     
@@ -107,7 +134,7 @@
         /* 'Louise'; */
         text-align: center;
         color:goldenrod;
-        font-size: 12px;
+        font-size: 8px;
     }
     
     .info h1 {
@@ -189,25 +216,12 @@
             position:relative;
         }
             .button {
-                background-color: hotpink; 
-                border: none;
-                font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
-                color: white;
-                display: inline-block;
-                text-align: center;
-                font-size: 10px;
-                padding: 10px;
-                transition-duration: 0.2s;
-                width: 25%;
-                padding-left: 3vw;
-                padding-right: 3.8vw;
+                font-size: 12px;
+                padding: 6px 10px;
+                min-height: 28px;
+                min-width: 36px;
+                width: auto;
                 -webkit-text-size-adjust: 100%;
-                /* height: 2%; */
-            }
-            
-            .button:hover {
-                background-color:  goldenrod; 
-                color: white;
             }
         
         .wrapper {
@@ -270,7 +284,7 @@
         }
 
         h3{        
-            font-size: 12pt; 
+            font-size: 8pt; 
             padding-left: 3vw;
             padding-right: 10vw;
             text-align: center;
