@@ -134,7 +134,7 @@
         /* 'Louise'; */
         text-align: center;
         color:goldenrod;
-        font-size: 12px;
+        font-size: 8px;
     }
     
     .info h1 {
@@ -284,7 +284,7 @@
         }
 
         h3{        
-            font-size: 12pt; 
+            font-size: 8pt; 
             padding-left: 3vw;
             padding-right: 10vw;
             text-align: center;
